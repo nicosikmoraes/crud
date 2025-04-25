@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sistema Lala</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+        <div class="container" id="container">
+            <div class="form-container sign-up">
+                <form action="#" method="post">
+                    <h1>Nova conta</h1>
+                    <div class="social-icons">
+                        <a href="#" class="icon">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </a>
+                        <a href="#" class="icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="icon">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="#" class="icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    
+                    <span>ou use seu e-mail para registra-se</span>
+
+                    <input type="text" name="name" id="name" placeholder="Nome" autocomplete="off">
+                    <input type="email" name="email" id="email" placeholder="E-Mail" autocomplete="off">
+                    <input type="password" name="password" id="password" placeholder="Senha" autocomplete="off">
+                    <button>Cadastrar</button>
+                </form>
+            </div>
+
+            <div class="form-container sign-in">
+                <form action="#" method="post">
+                    <h1>Login</h1>
+                    <div class="social-icons">
+                        <a href="#" class="icon">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </a>
+                        <a href="#" class="icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="icon">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="#" class="icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    
+                    <span>ou use seu e-mail e senha</span>
+
+                    <input type="email" name="email" id="email" placeholder="E-Mail" autocomplete="off">
+                    <input type="password" name="password" id="password" placeholder="Senha" autocomplete="off">
+                    <a href="#">Esqueceu sua senha?</a>
+                    <button>Acessar</button>
+                </form>
+            </div>
+            
+            <div class="toggle-container">
+                <div class="toggle">
+                    <div class="toggle-panel toggle-left">
+                        <h1>Seja bem vindo!</h1>
+                        <p>Tenha acesso ao sistema e suas funcionalidades</p>
+                        <button class="hidden" id="login">
+                            Acessar o sistema
+                        </button>
+                    </div>
+
+                    <div class="toggle-panel toggle-right">
+                        <h1>Olá!</h1>
+                        <p>Crie uma conta para ter acesso ao sistema e suas funcionalidades</p>
+                        <button class="hidden" id="register">
+                            Registrar-se
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="scripts.js"></script>
+</html>

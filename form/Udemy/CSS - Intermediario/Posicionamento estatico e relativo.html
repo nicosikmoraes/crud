@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+        <head>
+            <title>Posiconamentos (static, relative, absolute e fixed)</title>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" type="text/css" href="Estilo.css">
+
+            <style type="text/css">
+            
+body {
+    background: blanchedalmond;
+}
+
+#container {
+    background: #fff;
+    width: 800px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+h1 {
+    /*"Postiot:static" - é o posicionamento padrão*/
+    position: static;
+}
+
+p {
+  position: static;
+  width: 300px;
+}
+
+.relative {
+    border: 1px solid black;
+    position: relative;
+    /*top, right, bottom, left*/ /* Pode ser negativo */ 
+    top: -20px;
+    left: 100px;
+    /*Ele se movimenta de acorda com a posição inicial, os "top" "bottom" "..." são da margem */
+
+    /* ABSOLUTO E FIXO*/
+    
+}
+
+#absoluto {
+    background: #fff;
+    width: 800px;
+    margin: 10px auto;
+    padding: 10px;
+    position: relative; /* O container precisa ter o "position: relative" para o absolute usa-lo como base,
+    se não ele vai usar "a tela toda"*/
+}
+.absolute {
+    border: 1px solid black;
+    position: absolute;
+    /*Ele se movimenta de acorda com a posição do container "absoluta", os "top" "bottom" "..." são da margem */
+    top: 60px;
+    right: 80px;
+}
+
+.fixed {
+    border: 1px solid red;
+    position: absolute;
+    /* Se voce rolar a barra do navegador ele acompanha!! */
+   top: -200px;
+   right: 0px;
+   /*"z-index: 1; - Para definir quem aparece por primeiro*/
+}
+
+            </style>
+        </head>  
+
+        <body>
+      
+<div id="container">
+    <h1>Posiconamentos</h1>
+    <p>Lorem ipsum congue purus lectus mollis dictumst velit lacinia, fringilla 
+        risus neque in dapibus tincidunt cras porta, sodales id mauris congue integer
+        ut habitasse. vel nisl venenatis curabitur sit volutpat neque lacinia consectetur, </p>
+
+        <p class="relative"> POSICIONAMENTO RELATIVO Lorem ipsum congue purus lectus mollis dictumst velit lacinia, fringilla 
+            risus neque in dapibus tincidunt cras porta, sodales id mauris congue integer
+            ut habitasse. vel nisl venenatis curabitur sit volutpat neque lacinia consectetur, </p>
+
+            <p>Lorem ipsum congue purus lectus mollis dictumst velit lacinia, fringilla 
+                risus neque in dapibus tincidunt cras porta, sodales id mauris congue integer
+                ut habitasse. vel nisl venenatis curabitur sit volutpat neque lacinia consectetur, </p>
+</div>
+
+<div id="absoluto">
+    <h2><em>POSICIONAMENTO ABSOLUTO E FIXO</em></h2>
+    <p>Lorem ipsum congue purus lectus mollis dictumst velit lacinia, fringilla 
+        risus neque in dapibus tincidunt cras porta, sodales id mauris congue integer
+        ut habitasse. vel nisl venenatis curabitur sit volutpat neque lacinia consectetur, </p>
+
+        <p class="absolute">POSICIONAMENTO ABSOLUTO Lorem ipsum congue purus lectus mollis dictumst velit lacinia, fringilla 
+            risus neque in dapibus tincidunt cras porta, sodales id mauris congue integer
+            ut habitasse. vel nisl venenatis curabitur sit volutpat neque lacinia consectetur, </p>
+
+            <p class="fixed">POSICIONAMENTO FIXO ipsum congue purus lectus mollis dictumst velit lacinia, fringilla 
+                risus neque in dapibus tincidunt cras porta, sodales id mauris congue integer
+                ut habitasse. vel nisl venenatis curabitur sit volutpat neque lacinia consectetur, </p>
+</div>
+
+
+        </body>
+
+</html>

@@ -1,0 +1,36 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+table {
+    width: 600px;
+    border-collapse: collapse; /* 'collapse' - se usa para tirar o espaçamento entre a tabela - 'separate' vai ter um espaçamento */
+}
+
+th, td {
+  padding: 7px;
+}
+
+th {
+    text-transform: uppercase;  /* Serve para deixar as letras maiscúlas */
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #111;
+    text-align: left;
+    font-size: 90%;
+    letter-spacing: 0.1em; /* Para mudar o espaçamento entre as letras */
+}
+
+tr.alternado {
+    background-color: #efefef;
+}
+
+.numero {
+    text-align: right;
+}
+
+tr:hover {
+      background-color: #c3e6e5;
+}

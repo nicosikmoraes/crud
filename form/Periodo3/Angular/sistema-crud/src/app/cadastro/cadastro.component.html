@@ -1,0 +1,23 @@
+<!-- fxLayout - Isso aqui significa que está div vai fazer parte do do grid, como uma linha -->
+<div fxLayout="row" fxLayoutAlign="center">
+    <div fxlayout="column" fxFlex="1000px"> <!-- Pode ocupar até 12 -->
+        <form class="mt-60" #clientesFrm="ngForm">
+            <mat-card>
+
+                <mat-card-header>
+                    <mat-card-title>Dados Pessoais</mat-card-title>
+                </mat-card-header>
+
+                <mat-card-content class="mt-20">
+                    <div fxLayout="row" fxLayoutAlign="start" fxLayoutGap="16px"> <!-- O gap é o espaçamento -->
+                            <mat-form-field class="full-width"> <!-- Vai adicionar um campo no formulário, tem que importar -->
+                                <mat-label>Nome: *</mat-label>
+                                <input type="text" placeholder="EX: nicolas o lindo" matInput ><!-- Importat o input do material no Ts -->
+                            </mat-form-field>
+                    </div>
+                </mat-card-content>
+                
+            </mat-card>
+        </form>
+    </div>
+</div>

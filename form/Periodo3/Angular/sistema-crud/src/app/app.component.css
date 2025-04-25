@@ -1,0 +1,22 @@
+/* Três valores: flex-grow | flex-shrink | flex-basis */
+.spacer {
+    flex: 1 1 auto;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.link:hover {
+    color: rgb(219, 226, 255);
+    .bx {
+        color:rgb(219, 226, 255);
+    }
+}
+
+.bx {
+    margin-right: 0px;
+    color:#ffffff
+}

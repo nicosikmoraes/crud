@@ -1,0 +1,10 @@
+#caixa {
+    width: 300px;
+    height: 300px;
+    background: #b9c941;
+    padding: 10px;
+    margin: 10px;
+    /*border-radius: 10px;*/
+    border-radius: 10px 50px 80px 100px;
+    box-sizing: border-box; /* Esse comando serve para o tamanho da "caixa" não aumente com comandos como o de "Padding" tendo seu tamanho fixo */
+}

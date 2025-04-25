@@ -1,0 +1,42 @@
+.conteudo {
+    border: 2px solid red;
+    /*padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;*/
+
+    /*padding: 20px 10px 20px 10px;*/
+
+    padding: 20px;
+
+    margin: 20px;
+    
+
+    width: 150px;
+}
+
+.ef {
+    background-color: bisque;
+    border: 1px solid gray;
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin: 10px;
+}
+
+.texto {
+    clear: left; /*right, left, none, both*/ 
+    /*Esse clear serve para os textos não ficarem "juntos" com o float*/
+}
+
+#container{
+ border: 2px solid black;
+}
+
+/*.ef1 {
+    background-color: rebeccapurple;
+    border: 1px solid gray;
+    width: 100px;
+    height: 100px;
+    float: right; *No float os outros blocos nao o enxerga, como se tivessse em outro plano*
+}*/

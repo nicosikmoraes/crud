@@ -1,0 +1,39 @@
+{
+  "user": [
+    {
+      "name": "Nicolas",
+      "email": "nicolas.moraes.ns@gmail.com",
+      "password": "1234567"
+    },
+    {
+      "id": "4fe2",
+      "name": "dwadaw",
+      "email": "nicolas.moraes.ns@gmail.com",
+      "password": null
+    },
+    {
+      "id": "e410",
+      "name": "nico",
+      "email": "nicolas.moraes.ns@gmail.com",
+      "password": null
+    },
+    {
+      "id": "e8fa",
+      "name": "lara",
+      "email": "lara@gmail.com",
+      "password": null
+    },
+    {
+      "id": "a7d5",
+      "name": "jose",
+      "email": "jose@gmail.com",
+      "password": null
+    },
+    {
+      "id": "c44d",
+      "name": "dwas",
+      "email": "nicolas.moraes.ns@gmail.com",
+      "password": null
+    }
+  ]
+}

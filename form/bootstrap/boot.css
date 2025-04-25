@@ -1,0 +1,14 @@
+:root {
+    --primary-color: #7c7b1c;
+    --secondary-color: #350f3d;
+  }
+
+.caixa {
+    border: solid red 0px;
+    margin-top: 15px;
+}
+
+.card {
+    background-color: var(--primary-color);
+    color: #fff;
+}

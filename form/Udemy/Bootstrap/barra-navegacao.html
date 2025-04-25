@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+    <title>Bootstrap - botões</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  </head>
+
+  <body>
+
+    <!-- Navegação
+    Tipos de navegação:
+        nav-pills - Só faz um arredondamente em itens ativos. Ou seja ele só funciona no item ativado, precisa ter o "active".
+        nav-tabs - Ele ja criar abas automaticamente, bacana tbb.
+    opções de alinhamento: 
+        justify-content-center  
+        justify-content-end
+        flex-column -- Deixa em coluna.
+    -->
+    <h2>Navegação simples / abas</h2> <!-- Para criar essa barra de navegação vamos usar uma lista-->
+        <ul class="nav nav-tabs justify-content-center"> <!-- Para começar a lista. -->
+            <li class="nav-item"> <!-- Um item da lista -->
+                <a href="" class="nav-link active">Home</a>
+            </li>
+
+            <li class="nav-item"> <!-- Outro item da lista -->
+              <a href="" class="nav-link">Sobre</a> <!-- O"nav-item" e o "nav-item" cria um espaçamento certinho entre os itens. -->
+          </li>
+
+            <li class="nav-item"> <!-- Outro item da lista -->
+            <a href="" class="nav-link disabled">Serviços</a>
+        </li>
+        </ul>
+
+    <h2>Barra de navegação simples</h2>
+          <nav class="navbar navbar-expand-sm navbar-dark bg-dark"> <!-- "navbar-expand-sm" Faz com que os links fiquem um do lado do outro e não em coluna em dispositivos maiores que small (578px) --> 
+                <!-- Logo -->
+              <a href="" class="navbar-brand">Chalé Hotel</a> <!-- "navbar-brand", aqui nós estamos definindo a logo. -->
+
+              <!-- Navegação -->
+                  <ul class="navbar-nav ml-auto"> <!-- "Ml-auto" é margin-left isso faz com que o conteúdo seja jogado automaticamente para direita. -->
+                      <li class="nav-item">
+                           <a href="" class="nav-link" >Home</a>
+                      </li>
+
+                      <li class="nav-item">
+                          <a href="" class="nav-link" >Sobre</a>
+                      </li>
+
+                      <li class="nav-item">
+                          <a href="" class="nav-link" >Contato</a>
+                      </li>
+                  </ul>
+
+
+          </nav>
+
+    <h2>Barra de navegação com menu responsivo</h2>
+    
+    <nav class="navbar navbar-expand-sm navbar-dark bg-danger"> 
+      
+      <!-- Logo -->
+    <a href="" class="navbar-brand">Chalé Hotel</a> 
+
+    <!-- Menu Hamburguer -->  <!-- Aqui a gente criou os tres barrinhas pra que quando tiver pequena a tela tu clique nele e apareça as opções, nesse caso ele só aparece quando o tamanho da tela é small pq la no nav a gente colocou "navbar-expand-sm", o tamanho para ser small. (Pode mudar). -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target"> <!-- O data target define o que nós queremos abrir-->
+              <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+    <!-- Navegação -->
+       <div class="collapse navbar-collapse" id="nav-target"> <!-- Só com o "collapse" ja faz a lista desaparecer e aparecer o hamburguerzinho no lugar. "navbar-collapse" formata o collapse pra ficar bonitihno. -->
+            <ul class="navbar-nav ml-auto"> 
+              <li class="nav-item">
+                  <a href="" class="nav-link" >Home</a>
+              </li>
+
+              <li class="nav-item">
+                  <a href="" class="nav-link" >Sobre</a>
+              </li>
+
+              <li class="nav-item">
+                  <a href="" class="nav-link" >Contato</a>
+              </li>
+            </ul>
+       </div>
+
+
+</nav>
+
+    <h2>Barra de navegação com formulário</h2>
+    
+    <nav class="navbar navbar-expand-md navbar-dark bg-danger"> 
+      <div class="container-fluid">
+      <!-- Logo -->
+    <a href="" class="navbar-brand">Chalé Hotel</a> 
+
+    <!-- Hambuguer -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    <!-- Navegação -->
+       <div class="collapse navbar-collapse" id="nav-target2"> <!-- Só com o "collapse" ja faz a lista desaparecer e aparecer o hamburguerzinho no lugar. "navbar-collapse" formata o collapse pra ficar bonitihno. -->
+            <ul class="navbar-nav ml-2"> 
+              <li class="nav-item">
+                  <a href="" class="nav-link" >Home</a>
+              </li>
+
+              <li class="nav-item">
+                  <a href="" class="nav-link" >Sobre</a>
+              </li>
+
+              <li class="nav-item">
+                  <a href="" class="nav-link" >Contato</a>
+              </li>
+            </ul>
+
+                  <!-- Formulário -->
+                <form class="form-inline ml-auto"> <!-- Para criar um formulário. -->
+                  <input type="text" class="form-control" placeholder="Pesquisar...">
+                  <button class="btn btn-success">Ok</button>
+               </form>
+
+       </div>
+
+      
+    </div>
+</nav>
+    
+    <h2>Barra de navegação com menu dropdown</h2>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-danger"> 
+      
+      <!-- Logo -->
+    <a href="" class="navbar-brand">Chalé Hotel</a> 
+
+    <!-- Menu Hamburguer -->  <!-- Aqui a gente criou os tres barrinhas pra que quando tiver pequena a tela tu clique nele e apareça as opções, nesse caso ele só aparece quando o tamanho da tela é small pq la no nav a gente colocou "navbar-expand-sm", o tamanho para ser small. (Pode mudar). -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target2"> <!-- O data target define o que nós queremos abrir-->
+              <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+    <!-- Navegação -->
+       <div class="collapse navbar-collapse" id="nav-target2"> <!-- Só com o "collapse" ja faz a lista desaparecer e aparecer o hamburguerzinho no lugar. "navbar-collapse" formata o collapse pra ficar bonitihno. -->
+            <ul class="navbar-nav ml-auto"> 
+              <li class="nav-item">
+                  <a href="" class="nav-link" >Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" >Contato</a>
+
+                      <div class="dropdown-menu">
+                          <a href="" class="dropdown-item"> Contato 1 </a>
+                          <a href="" class="dropdown-item"> Contato 2 </a>
+                          <a href="" class="dropdown-item"> Contato 3 </a>
+                      </div>
+
+            </li>
+
+              <li class="nav-item">
+                  <a href="" class="nav-link" >Sobre</a>
+              </li>
+
+            </ul>
+
+       </div>
+
+      
+
+</nav>
+    
+    
+    <!--Cores
+    opções: bg-primary, bg-secondary, bg-success, bg-info,
+    bg-warning, bg-danger, bg-light, bg-dark
+    -->
+    <h2>Cores</h2>
+    
+    <nav class="navbar navbar-expand-sm navbar-light bg-info">  
+      <!-- Logo -->
+    <a href="" class="navbar-brand">Chalé Hotel</a> 
+    <!-- Navegação -->
+        <ul class="navbar-nav ml-auto"> 
+                 <a href="" class="nav-link" >Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="" class="nav-link" >Sobre</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="" class="nav-link" >Contato</a>
+            </li>
+        </ul>
+
+
+</nav>
+
+
+    <!--Alinhamentos
+    opções: fixed-top (Deixa a barra fixa no topo), fixed-bottom (Deixa a barra fixa em baixo), sticky (Quando toca no topo o acompanha).
+    -->
+    <h2>Alinhamentos</h2>
+
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-info">  
+      <!-- Logo -->
+    <a href="" class="navbar-brand">Chalé Hotel</a> 
+    <!-- Navegação -->
+        <ul class="navbar-nav ml-auto"> 
+                 <a href="" class="nav-link" >Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="" class="nav-link" >Sobre</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="" class="nav-link" >Contato</a>
+            </li>
+        </ul>
+
+
+</nav>
+
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

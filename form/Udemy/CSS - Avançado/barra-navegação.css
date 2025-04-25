@@ -1,0 +1,114 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+/* Lista */
+
+#lista ul {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+}
+
+#lista li {
+    padding: 5px 20px;
+    background: url(imagens/seta.png) no-repeat left center;
+}
+
+/* Barra de Navegação */
+
+#barra-navegação ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;     
+}
+
+#barra-navegação ul a {
+   width: 200px;
+   height: 40px;
+   display: block;
+    background: url(imagens/menu.png) no-repeat;
+    color: #000;
+    text-decoration: none;
+    text-indent: 40px;
+    line-height: 40px;     
+}
+
+#barra-navegação ul a:hover {
+    background-position: right bottom ;
+    color: #fff;
+}
+
+/*Marcar página atual */
+
+/* #barra-navegação .home a {
+    background-position: right bottom ;
+    color: #fff;
+} */
+
+/* Tu faz isso pra todas tuas páginas e vai marcar a página que tu ta */
+
+/* Navegação vertical */
+
+#navegação-horizontal ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 720px;
+    float: left; /* Tem q usar aqui tambem para q ambos componetes sejam 'float', caso contrario da problema */
+    background: url(imagens/fundo-horizontal.png) repeat-x;
+
+}
+
+#navegação-horizontal ul li {
+   /* display: inline; - Essa daqui é a maneira mais fácil pórem pode dar problemas no futuro */
+   float: left; 
+}
+
+#navegação-horizontal ul a {
+    display: block;
+    padding: 0 2em;
+    line-height: 2em;
+    text-decoration: none;
+    color: #fff;
+    background: url(imagens/divisor.png) repeat-y left top;
+}
+
+#navegação-horizontal ul .primeiro a {
+    background: none;
+}
+
+#navegação-horizontal ul a:hover {
+    color: #085662;
+    background-color: #44cade;
+}
+
+/* Navegação Abas */
+
+#navegação-abas ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 720px;
+}
+
+#navegação-abas ul li {
+    float: left;
+background: url(imagens/aba-direita2.png) no-repeat top right;
+}
+
+#navegação-abas ul li a {
+    display: block;
+    padding: 0 2em;
+    line-height: 3em;
+    text-decoration: none;
+    background: url(imagens/aba-esquerda2.png) no-repeat top left;
+    color: #fff;
+}
+
+#navegação-abas ul li a:hover {
+    color: #894a1f;
+}

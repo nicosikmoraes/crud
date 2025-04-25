@@ -1,0 +1,56 @@
+#caixa {
+    width: 300px;
+    height: 300px;
+    background: greenyellow;
+    position: relative; /* Para o "top" e "left" funcionarem */
+    animation-name: animacao-caixa; /* Para saber qual animação será usada */
+    animation-duration: 5s;
+    animation-delay: 2s; /* Define um tempo para começar a animação */
+    animation-iteration-count: 2; /* Quantas vezes a animação vai repetir */
+    animation-direction:  alternate; /* Quando for repetir ele vai fazer uma animação "ao contrario" */ /* Se usar "Reverse" a animação vai começar ao contrario desde o começo */
+}
+
+@keyframes animacao-caixa {               /* '@keyframes' é necessario usa-lo para ser uma animação */ /* Se cria a animação separada no keyframe e depois se usa por exemplo em caixa*/
+      from  { 
+        background: greenyellow;
+        border-radius: 0; 
+        top: 0;
+        left: 0;
+    }  /* Estado inicial */
+      
+    to { 
+        background: red;
+        border-radius: 300px;
+        top: 0;
+        left: 300px;
+        width: 200px;
+        height: 200px;
+     } /* Estado final */
+}
+
+h1 {
+    opacity: 0%;
+    position: relative;
+    animation-name: letras; 
+    animation-duration: 5s;
+    animation-delay: 2s; 
+    animation-iteration-count: 2; 
+    animation-direction:  alternate;
+    top: 50%;
+    left: 50%;
+}
+
+@keyframes letras {
+
+    from {
+        opacity: 0%;
+        top: 40%;
+        left: 40%;
+    }
+
+    to {
+        opacity: 100%;
+        top: 40%;
+        left: 40%;
+    }
+}

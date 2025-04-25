@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+       <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Border Radius e Border Sizing</title>
+
+        <link rel="stylesheet" href="New-input.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+       </head>
+      <body>
+     
+        <form>
+
+            <!-- Nome -->
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required autofocus> <!-- O "Autofocus" serve para que quando recarregada a página ja entre indo nessa opção -->
+            <br><br>
+
+            <!-- Email -->
+            <label for="email">email</label>
+            <input type="email" name="email" id="email" required > <!-- O "Required" serve para ter que escrever o email para o formulário ser enviado, válidado. -->
+            <br><br>
+
+             <!-- Número -->
+             <label for="numero">Número</label>
+             <input type="number" name="numero" id="numero" min="0" max="10" > 
+             <br><br>
+
+             <!-- Url -->
+             <label for="url">Url</label>
+             <input type="url" name="url" id="url" placeholder="http://www..." > <!-- O "placeholde" é aquele nome no fundo que serve como exemplo. -->
+             <br><br>
+
+              <!-- Pesquisa -->
+              <label for="pesquisa">Pesquisa</label>
+              <input type="search" name="pesquisa" id="pesquisa" > <!-- No "serach" Aparece um "X" no final do quadrado para apagar o que foi escirto de uma só vex. -->
+              <br><br>
+
+              <!-- Range -->
+              <label for="range">Range</label>
+              <input type="range" name="range" id="range" min="1" max="10" value="5" > <!-- O "value" Marca em qual valor vai começar. -->
+              <br><br>
+
+                <!-- Date -->
+                <label for="Date">Date</label>
+                <input type="date" name="date" id="date"> 
+                <br><br>
+  
+                <!-- Cor -->
+                <label for="Cor">Cor</label>
+                <input type="color" name="color" id="color"> 
+                <br><br>
+ 
+
+
+<input type="submit" name="" value="enviar"> <!-- Botão de enviar -->
+
+        </form>
+        
+        </body>
+
+        <script src="scripts.js"></script>
+</html>

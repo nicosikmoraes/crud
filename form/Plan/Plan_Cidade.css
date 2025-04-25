@@ -1,0 +1,1718 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background-color: #dedbde;
+}
+
+/*------------------ Retangulo da Pesquisa -------------------*/
+
+#cabecalho {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    min-width: 1300px;
+    max-width: 2000px;
+    display: grid;
+    grid-template-areas: "name select date_ida date_volta" 
+                         "name select botao botao"; 
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns:20% 20% 10% 10% 1fr;
+    position: relative;
+    height: 90px;
+    width: auto;
+    background-color: #fffdff;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, .1);
+    margin: 10px;
+    padding: 8px;
+}
+
+
+#Destino {
+    display: flex inline;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: #34344e;
+    border: 2px solid;
+    background-color: #fffdff;
+    margin-top: 7px;
+    color: #34344e;
+}
+
+#select_D {
+    margin-left: 40px;
+    color: #34344e;
+}
+
+#saida {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: #34344e;
+    border: 2px solid;
+    background-color: #fffdff;
+    margin-top: -40px;
+    color: #34344e;
+}
+
+#select_S {
+    margin-left: 56px;
+    color: #34344e;
+}
+
+#name {
+    color: #34344e;
+    display: inline-flex;
+    font-size: 60px;
+    align-items: center;
+    margin-left: 10px;
+    grid-area: name;
+}
+
+.select {
+    display: grid;
+    display: inline;
+    grid-area: select;
+    margin-top: 8px;
+}
+
+#date_ida input {
+    width: 120px;
+    height: 20px;
+    padding: 4px;
+    margin-top: 7px;
+    margin-right: 400px;
+    grid-area: date_ida;
+    border-radius: 4px;
+    border-color: #34344e;
+    border: 1px solid;
+}
+
+#date_ida input::placeholder {
+    color: #34344e;
+}
+
+#date_volta input {
+    width: 120px;
+    height: 20px;
+    padding: 4px;
+    margin-top: 7px;
+    margin-right: 400px;
+    grid-area: date_volta;
+    border-radius: 4px;
+    border-color: #34344e;
+    border: 1px solid;
+}
+
+#date_volta input::placeholder {
+    color: #34344e;
+}
+
+#button {
+   grid-area: botao;
+   margin-top: 4px;
+}
+
+.bnt {
+    width: 96%;
+    height: 28px;
+    border-radius: 16px;
+    border: none;
+    background-color: #34344e;
+    color: #fffdff;
+    box-shadow: rgba(0, 0, 0, .1);
+}
+
+/*--------------------- Parte roxa de cima ----------------------*/
+
+#menu-cima {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    min-width: 1300px;
+    max-width: 2000px;
+    background-color: #34344e;
+    width: auto;
+    height: 50px;
+    display: grid;
+    grid-template-areas: ". . plan . . carrinho face" ; 
+        grid-template-rows: 1fr;
+        grid-template-columns:10% 1fr 10% 1fr 2% 4% 4%;
+}
+
+#titulo {
+    display: grid;
+    grid-area: plan;
+    color: #fffdff ;
+    font-size: 45px;
+}
+
+img {
+    color: #fffdff;
+    width: 40px;
+    height: 40px;
+    margin: auto auto auto auto;
+    
+}
+
+.face {
+   display: grid;
+   grid-area: face;
+   color: #fffdff;
+   border-left: 1px solid #fffdff;
+   height: 50px;
+   width: 50px;
+}
+
+#carrinho {
+    display: grid;
+    grid-area: carrinho;
+    color: #fffdff;
+    height: 50px;
+    width: 50px;
+ }
+
+ #link-face {
+    margin: auto auto auto auto;
+ }
+
+ #link-carrinho {
+    margin: auto auto auto auto;
+ }
+
+/* ---------------------- Restaurantes --------------------*/
+
+#rio-de-janeiro {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    height: 600px;
+    width: auto;
+}
+
+#sao-paulo {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    margin-top: 15px;
+    margin-bottom: 20px;
+    height: 600px;
+    width: auto;
+}
+
+ /*---------------- Restaurante - Rio de Janeiro Titulo -------------------*/
+
+ .caixa-restaurante-nome {
+    height: 30px;
+    width: auto;
+ }
+
+ .caixa-restaurante-nome h2 {
+    text-align: left;
+    color: #34344e;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 35px;
+    
+ }
+
+
+/* ----------------------- caixa hotel titulo rj ------------------------------*/
+
+ .caixa-hotel-nome {
+    height: 30px;
+    width: auto;
+    display: grid;
+    grid-area: titulo;
+ }
+
+ .caixa-hotel-nome h2 {
+    text-align: left;
+    color: #34344e;
+    margin-left: 20px;
+    font-size: 35px;
+    
+ }
+
+ /*---------------  Restaurante Rio de Janeiro --------------------*/
+
+ #restaurantes-rj {
+    min-width: 1300px;
+    max-width: 2000px;
+    display: grid;
+    width: auto;
+    height: 260px;
+    padding: 1%;
+
+    grid-template-areas: " lugar-1 lugar-2 lugar-3 " ; 
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+ }
+
+/*  #lugar-1 {
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    display: grid;
+     width: 400px;
+     height: 230px;
+     grid-area: lugar-1;
+     background-color: #fffdff;
+
+     grid-template-areas: " imagem . lassai-texto . "
+                          " imagem abre abre . " 
+                          " imagem fecha fecha . " 
+                          " imagem link link link " ; 
+        grid-template-rows: 1fr 20px 20px 1fr;
+        grid-template-columns: 300px 1fr 1fr 1fr;
+ } 
+
+
+
+#lassai {
+    width: 300px;
+    height: 100%;
+    grid-area: imagem;
+}
+
+#lassai-texto {
+    color: #34344e;
+    grid-area: lassai-texto;
+    margin-top: 20px;
+    
+}
+
+.horario-abre {
+    display: grid;
+    color: #34344e;
+    grid-area: abre;
+    
+
+    grid-template-areas: " relogio horas " ; 
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr  1fr;
+}
+
+
+
+.relogio {
+    width: 16px;
+    height: 16px;
+    grid-area: relogio;
+    margin-top: 1px;
+    margin-left: 15px;
+}
+
+.horario-abre h4 {
+    grid-area: horas;
+
+}
+
+.locker {
+    width: 16px;
+    height: 16px;
+    grid-area: locker;
+    margin-left: 15px;
+}
+
+.horario-fecha h4 {
+    grid-area: horas;
+    margin-top: 2px;
+
+}
+
+.horario-fecha {
+    display: grid;
+    color: #34344e;
+    grid-area: fecha ;
+    
+
+    grid-template-areas: " locker horas " ; 
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr  1fr;
+}
+
+#lassai-link {
+    grid-area: link;
+    margin: auto;
+    color: #34344e;
+    text-decoration: none;
+}
+
+#lassai-link:hover {
+    color: #7070c7;
+}     */
+
+  #lugar-1 {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    display: grid;
+     width: 400px;
+     height: 230px;
+     background-image: url(imagens/lassai.jpg);
+     background-size: cover;
+     grid-area: lugar-1;
+     background-color: #fffdff;
+
+     grid-template-areas: " . . ."
+                          " lassai-texto . . "
+                          " mapa  mapa ."   ; 
+        grid-template-rows: 1fr 15% 10%;
+        grid-template-columns: 23% 20% 1fr;
+ } 
+ 
+ #lassai-texto {
+    color: #fffdff;
+    grid-area: lassai-texto;
+    margin-left: 20px;
+    font-size: 26px;
+    margin-bottom: 5px;
+    
+}
+
+.mapa {
+    display: grid;
+    color: #fffdff;
+    grid-area: mapa;
+    
+
+    grid-template-areas: " ponto lugar " ; 
+        grid-template-rows: 1fr;
+        grid-template-columns: 10%  1fr;
+}
+
+.ponto {
+    width: 12px;
+    height: 12px;
+    grid-area: ponto;
+    margin-left: 20px;
+    margin-bottom: 18px;
+}
+
+.mapa h4 {
+    font-size: 8px;
+    grid-area: lugar;
+    color: #fffdff;
+    margin-left: 20px;
+    margin-bottom: 16px;
+}
+
+#lassai-link {
+    text-decoration: none;
+    width: 400px;
+     height: 230px;
+}
+
+#lassai-link:hover {
+    box-shadow: 0 0 10px rgba(140, 4, 173, 0.2);
+    width: 400px;
+     height: 230px;
+}    
+
+
+
+
+/* Lugar 2 */
+
+/* #lugar-2 {
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    display: grid;
+    width: 400px;
+    height: 230px;
+    grid-area: lugar-2;
+
+    background-color: #fffdff;
+
+    grid-template-areas: " imagem2 . satyricon-texto . "
+                         " imagem2 abre abre . " 
+                         " imagem2 fecha fecha . " 
+                         " imagem2 link link link " ; 
+       grid-template-rows: 1fr 20px 20px 1fr;
+       grid-template-columns: 300px 1fr 1fr 1fr;
+}
+
+#satyricon {
+    width: 300px;
+    height: 100%;
+    grid-area: imagem2;
+}
+
+#satyricon-texto {
+    color: #34344e;
+    grid-area: satyricon-texto;
+    margin-top: 20px;
+    
+}
+
+#satyricon-link {
+    grid-area: link;
+    margin: auto;
+    color: #34344e;
+    text-decoration: none;
+}
+
+#satyricon-link:hover {
+    color: #7070c7;
+}
+
+#lugar-2 .h4-satyricon {
+    margin-right: 13px;
+} */
+
+#lugar-2 {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    display: grid;
+     width: 400px;
+     height: 230px;
+     background-image: url(imagens/satyricon.jpg);
+     background-size: cover;
+     grid-area: lugar-2;
+     background-color: #fffdff;
+
+     grid-template-areas: " . . ."
+                          " lassai-texto . . "
+                          " mapa  mapa ."   ; 
+        grid-template-rows: 1fr 15% 10%;
+        grid-template-columns: 23% 20% 1fr;
+ } 
+ 
+ #satyricon-texto {
+    color: #fffdff;
+    grid-area: lassai-texto;
+    margin-left: 20px;
+    font-size: 26px;
+    margin-bottom: 5px;
+    
+}
+
+.mapa {
+    display: grid;
+    color: #fffdff;
+    grid-area: mapa;
+    
+
+    grid-template-areas: " ponto lugar " ; 
+        grid-template-rows: 1fr;
+        grid-template-columns: 10%  1fr;
+}
+
+.ponto {
+    width: 12px;
+    height: 12px;
+    grid-area: ponto;
+    margin-left: 20px;
+    margin-bottom: 18px;
+}
+
+.mapa h4 {
+    font-size: 8px;
+    grid-area: lugar;
+    color: #fffdff;
+    margin-left: 20px;
+    margin-bottom: 16px;
+}
+
+#satyricon-link {
+    text-decoration: none;
+    width: 400px;
+     height: 230px;
+}
+
+#satyricon-link:hover {
+    box-shadow: 0 0 10px rgba(140, 4, 173, 0.2);
+    width: 400px;
+     height: 230px;
+}    
+
+
+/* Lugar 3 */
+
+/* #lugar-3 {
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    display: grid;
+    width: 400px;
+    height: 230px;
+    grid-area: lugar-3;
+
+    background-color: #fffdff;
+
+    grid-template-areas: " imagem3 . fogo-texto . "
+                          " imagem3 abre abre . " 
+                          " imagem3 fecha fecha . " 
+                          " imagem3 link link link " ; 
+        grid-template-rows: 1fr 20px 20px 1fr;
+        grid-template-columns: 300px 1fr 1fr 1fr;
+}
+
+#fogo {
+    width: 300px;
+    height: 100%;
+    grid-area: imagem3;
+}
+
+#fogo-texto {
+    color: #34344e;
+    grid-area: fogo-texto;
+    margin-top: 20px;
+    
+}
+
+#fogo-link {
+    grid-area: link;
+    margin: auto;
+    color: #34344e;
+    text-decoration: none;
+}
+
+#fogo-link:hover {
+    color: #7070c7;
+} */
+
+#lugar-3 {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    display: grid;
+     width: 400px;
+     height: 230px;
+     background-image: url(imagens/fogo\ de\ chao.jpg);
+     background-size: cover;
+     grid-area: lugar-3;
+     background-color: #fffdff;
+
+     grid-template-areas: " . . ."
+                          " fogo-texto fogo-texto fogo-texto "
+                          " mapa  mapa ."   ; 
+        grid-template-rows: 1fr 15% 10%;
+        grid-template-columns: 23% 20% 1fr;
+ } 
+ 
+ #fogo-texto {
+    color: #fffdff;
+    grid-area: fogo-texto;
+    margin-left: 20px;
+    font-size: 26px;
+    margin-bottom: 5px;
+    
+}
+
+.mapa {
+    display: grid;
+    color: #fffdff;
+    grid-area: mapa;
+    
+
+    grid-template-areas: " ponto lugar " ; 
+        grid-template-rows: 1fr;
+        grid-template-columns: 10%  1fr;
+}
+
+.ponto {
+    width: 12px;
+    height: 12px;
+    grid-area: ponto;
+    margin-left: 20px;
+    margin-bottom: 18px;
+}
+
+.mapa h4 {
+    font-size: 8px;
+    grid-area: lugar;
+    color: #fffdff;
+    margin-left: 20px;
+    margin-bottom: 16px;
+}
+
+#fogo-link {
+    text-decoration: none;
+    width: 400px;
+     height: 230px;
+}
+
+#fogo-link:hover {
+    box-shadow: 0 0 10px rgba(140, 4, 173, 0.2);
+    width: 400px;
+     height: 230px;
+}    
+/* --------------------- Hotel RJ --------------------------- */
+
+#hoteis-rj {
+    min-width: 1300px;
+    max-width: 2000px;
+    display: grid;
+    width: auto;
+    height: 260px;
+
+    grid-template-areas: " titulo titulo titulo"
+       " lugar-1-hotel lugar-2-hotel lugar-3-hotel" ; 
+        grid-template-rows: 10% 1fr ;
+        grid-template-columns: 1fr 1fr 1fr;
+ }
+
+ /* ------------------------- lugar-1-hotel ---------------------*/
+
+/* #lugar-1-hotel {
+    margin-top: 20px;
+    margin-left: 15px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    display: grid;
+     width: 400px;
+     height: 230px;
+     grid-area: lugar-1-hotel;
+     background-color: #fffdff;
+
+     grid-template-areas: " imagem-ht . royal-texto . "
+                          " imagem-ht abre abre . " 
+                          " imagem-ht fecha fecha . " 
+                          " imagem-ht link link link " ; 
+        grid-template-rows: 1fr 20px 20px 1fr;
+        grid-template-columns: 300px 1fr 1fr 1fr;
+ } 
+
+
+
+#royal {
+    width: 300px;
+    height: 100%;
+    grid-area: imagem-ht;
+}
+
+#royal-texto {
+    color: #34344e;
+    grid-area: royal-texto;
+    margin-top: 20px;
+    
+}
+
+.horario-abre {
+    display: grid;
+    color: #34344e;
+    grid-area: abre;
+    
+
+    grid-template-areas: " relogio horas " ; 
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr  1fr;
+}
+
+
+
+.relogio {
+    width: 16px;
+    height: 16px;
+    grid-area: relogio;
+    margin-top: 1px;
+    margin-left: 15px;
+}
+
+.horario-abre h4 {
+    grid-area: horas;
+
+}
+
+.locker {
+    width: 16px;
+    height: 16px;
+    grid-area: locker;
+    margin-left: 15px;
+}
+
+.horario-fecha h4 {
+    grid-area: horas;
+    margin-top: 2px;
+
+}
+
+.horario-fecha {
+    display: grid;
+    color: #34344e;
+    grid-area: fecha ;
+    
+
+    grid-template-areas: " locker horas " ; 
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr  1fr;
+}
+
+#royal-link {
+    grid-area: link;
+    margin: auto;
+    color: #34344e;
+    text-decoration: none;
+}
+
+#royal-link:hover {
+    color: #7070c7;
+} */
+
+#lugar-1-hotel {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    display: grid;
+     width: 400px;
+     height: 230px;
+     background-image: url(imagens/Royal\ rio.jpg);
+     background-size: cover;
+     grid-area: lugar-1-hotel;
+     background-color: #fffdff;
+
+     grid-template-areas: " . . ."
+                          " royal-texto royal-texto royal-texto "
+                          " mapa mapa."   ; 
+        grid-template-rows: 1fr 15% 10%;
+        grid-template-columns: 23% 20% 1fr;
+ } 
+ 
+ #royal-texto {
+    color: #fffdff;
+    grid-area: royal-texto;
+    margin-left: 20px;
+    font-size: 26px;
+    margin-bottom: 5px;
+    
+}
+
+.mapa {
+    display: grid;
+    color: #fffdff;
+    grid-area: mapa;
+    
+
+    grid-template-areas: " ponto lugar " ; 
+        grid-template-rows: 1fr;
+        grid-template-columns: 10%  1fr;
+}
+
+.ponto {
+    width: 12px;
+    height: 12px;
+    grid-area: ponto;
+    margin-left: 20px;
+    margin-bottom: 18px;
+}
+
+.mapa h4 {
+    font-size: 8px;
+    grid-area: lugar;
+    color: #fffdff;
+    margin-left: 20px;
+    margin-bottom: 16px;
+}
+
+#royal-link {
+    text-decoration: none;
+    width: 400px;
+     height: 230px;
+     margin-top: 20px;
+     margin-left: 20px;
+}
+
+#royal-link:hover {
+    box-shadow: 0 0 10px rgba(140, 4, 173, 0.2);
+    width: 400px;
+     height: 230px;
+     margin-top: 20px;
+     margin-left: 20px;
+}    
+/* ------------------------------- lugar-2-hotel ------------------------------- */
+
+/* #lugar-2-hotel {
+    margin-top: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    display: grid;
+     width: 400px;
+     height: 230px;
+     grid-area: lugar-2-hotel;
+     background-color: #fffdff;
+
+     grid-template-areas: " imagem-ht2 . ipanema-texto . "
+                          " imagem-ht2 abre abre . " 
+                          " imagem-ht2 fecha fecha . " 
+                          " imagem-ht2 link link link " ; 
+        grid-template-rows: 1fr 20px 20px 1fr;
+        grid-template-columns: 300px 1fr 1fr 1fr;
+ } 
+
+
+
+#ipanema {
+    display: grid;
+    width: 300px;
+    height: 100%;
+    grid-area: imagem-ht2;
+}
+
+#ipanema-texto {
+    color: #34344e;
+    grid-area: ipanema-texto;
+    margin-top: 20px;
+    
+}
+
+#ipanema-link {
+    grid-area: link;
+    margin: auto;
+    color: #34344e;
+    text-decoration: none;
+}
+
+#ipanema-link:hover {
+    color: #7070c7;
+} */
+
+#lugar-2-hotel {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    display: grid;
+     width: 400px;
+     height: 230px;
+     background-image: url(imagens/ipanema.jpg);
+     background-size: cover;
+     grid-area: lugar-2-hotel;
+     background-color: #fffdff;
+
+     grid-template-areas: " . . ."
+                          " ipanema-texto ipanema-texto ipanema-texto "
+                          " mapa mapa."   ; 
+        grid-template-rows: 1fr 15% 10%;
+        grid-template-columns: 23% 20% 1fr;
+ } 
+ 
+ #ipanema-texto {
+    color: #fffdff;
+    grid-area: ipanema-texto;
+    margin-left: 20px;
+    font-size: 26px;
+    margin-bottom: 5px;
+    
+}
+
+.mapa {
+    display: grid;
+    color: #fffdff;
+    grid-area: mapa;
+    
+
+    grid-template-areas: " ponto lugar " ; 
+        grid-template-rows: 1fr;
+        grid-template-columns: 10%  1fr;
+}
+
+.ponto {
+    width: 12px;
+    height: 12px;
+    grid-area: ponto;
+    margin-left: 20px;
+    margin-bottom: 18px;
+}
+
+.mapa h4 {
+    font-size: 8px;
+    grid-area: lugar;
+    color: #fffdff;
+    margin-left: 20px;
+    margin-bottom: 16px;
+}
+
+#ipanema-link {
+    text-decoration: none;
+    width: 400px;
+     height: 230px;
+     margin-top: 20px;
+
+     
+}
+
+#ipanema-link:hover {
+    box-shadow: 0 0 10px rgba(140, 4, 173, 0.2);
+    width: 400px;
+     height: 230px;
+     margin-top: 20px;
+
+}  
+
+/* --------------------------------- lugar-3-hotel ----------------------- */
+
+/* #lugar-3-hotel {
+    margin-top: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    display: grid;
+     width: 400px;
+     height: 230px;
+     grid-area: lugar-3-hotel;
+     background-color: #fffdff;
+
+     grid-template-areas: " imagem-ht3 . ipanema-texto . "
+                          " imagem-ht3 abre abre . " 
+                          " imagem-ht3 fecha fecha . " 
+                          " imagem-ht3 link link link " ; 
+        grid-template-rows: 1fr 20px 20px 1fr;
+        grid-template-columns: 300px 1fr 1fr 1fr;
+ } 
+
+
+
+#bossa-nova {
+    display: grid;
+    width: 300px;
+    height: 100%;
+    grid-area: imagem-ht3;
+}
+
+#bossa-nova-texto {
+    color: #34344e;
+    grid-area: ipanema-texto;
+    margin-top: 20px;
+    
+}
+
+#bossa-nova-link {
+    grid-area: link;
+    margin: auto;
+    color: #34344e;
+    text-decoration: none;
+}
+
+#bossa-nova-link:hover {
+    color: #7070c7;
+} */
+
+#lugar-3-hotel {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    display: grid;
+     width: 400px;
+     height: 230px;
+     background-image: url(imagens/Bossa\ nova.jpg);
+     background-size: cover;
+     grid-area: lugar-3-hotel;
+     background-color: #fffdff;
+
+     grid-template-areas: " . . ."
+                          " bossa-nova-texto bossa-nova-texto bossa-nova-texto "
+                          " mapa mapa."   ; 
+        grid-template-rows: 1fr 15% 10%;
+        grid-template-columns: 23% 20% 1fr;
+ } 
+ 
+ #bossa-nova-texto {
+    color: #fffdff;
+    grid-area: bossa-nova-texto;
+    margin-left: 20px;
+    font-size: 26px;
+    margin-bottom: 5px;
+    
+}
+
+#bossa-nova-link {
+    text-decoration: none;
+    width: 400px;
+     height: 230px;
+     margin-top: 20px;
+
+     
+}
+
+#bossa-nova-link:hover {
+    box-shadow: 0 0 10px rgba(140, 4, 173, 0.2);
+    width: 400px;
+     height: 230px;
+     margin-top: 20px;
+
+}  
+
+
+/* -------------------- Restaurantes-sp ----------------------*/
+
+.caixa-restaurante-nome-sp {
+    height: 30px;
+    width: auto;
+ }
+
+ .caixa-restaurante-nome-sp h2 {
+    text-align: left;
+    color: #34344e;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 35px;
+    
+ }
+
+/* ------------------------- Caixa Restaurante SP --------------------------- */
+
+/* ------------------------- Caixa hotel SP ------------------------------*/
+
+.caixa-hotel-nome-sp {
+    height: 30px;
+    width: auto;
+    grid-area: titulo-sp;
+ }
+
+ .caixa-hotel-nome-sp h2 {
+    text-align: left;
+    color: #34344e;
+    margin-left: 20px;
+    font-size: 35px;
+    
+ }
+
+
+/* ---------------------------------- Lugar-1-sp --------------------------------------- */
+
+ #restaurantes-sp {
+    min-width: 1300px;
+    max-width: 2000px;
+    display: grid;
+    width: auto;
+    height: 260px;
+    padding: 1%;
+
+    grid-template-areas: " lugar-1-sp lugar-2-sp lugar-3-sp " ; 
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+ }
+
+ /* #lugar-1-sp {
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    display: grid;
+     width: 400px;
+     height: 230px;
+     grid-area: lugar-1-sp;
+     background-color: #fffdff;
+
+     grid-template-areas: " imagem-sp . arturito-texto . "
+                          " imagem-sp abre abre . " 
+                          " imagem-sp fecha fecha . " 
+                          " imagem-sp link link link " ; 
+        grid-template-rows: 1fr 20px 20px 1fr;
+        grid-template-columns: 300px 1fr 1fr 1fr;
+ }
+
+ #arturito {
+    width: 300px;
+    height: 100%;
+    grid-area: imagem-sp;
+}
+
+#arturito-texto {
+    color: #34344e;
+    grid-area: arturito-texto;
+    margin-top: 20px;
+    
+}
+
+#arturito-link {
+    grid-area: link;
+    margin: auto;
+    color: #34344e;
+    text-decoration: none;
+}
+
+#arturito-link:hover {
+    color: #7070c7;
+} */
+
+#lugar-1-sp {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    display: grid;
+     width: 400px;
+     height: 230px;
+     background-image: url(imagens/arturito.jpg);
+     background-size: cover;
+     grid-area: lugar-1-sp;
+     background-color: #fffdff;
+
+     grid-template-areas: " . . ."
+                          " arturito-texto arturito-texto arturito-texto "
+                          " mapa  mapa ."   ; 
+        grid-template-rows: 1fr 15% 10%;
+        grid-template-columns: 23% 20% 1fr;
+ } 
+ 
+ #arturito-texto {
+    color: #fffdff;
+    grid-area: arturito-texto;
+    margin-left: 20px;
+    font-size: 26px;
+    margin-bottom: 5px;
+    
+}
+
+.mapa {
+    display: grid;
+    color: #fffdff;
+    grid-area: mapa;
+    
+
+    grid-template-areas: " ponto lugar " ; 
+        grid-template-rows: 1fr;
+        grid-template-columns: 10%  1fr;
+}
+
+.ponto {
+    width: 12px;
+    height: 12px;
+    grid-area: ponto;
+    margin-left: 20px;
+    margin-bottom: 18px;
+}
+
+.mapa h4 {
+    font-size: 8px;
+    grid-area: lugar;
+    color: #fffdff;
+    margin-left: 20px;
+    margin-bottom: 16px;
+}
+
+#arturito-link {
+    text-decoration: none;
+    width: 400px;
+     height: 230px;
+}
+
+#arturito-link:hover {
+    box-shadow: 0 0 10px rgba(140, 4, 173, 0.2);
+    width: 400px;
+     height: 230px;
+}   
+
+/*--------------------------------- Lugar-2-sp -------------------------------------*/  
+
+/* #lugar-2-sp {
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    display: grid;
+     width: 400px;
+     height: 230px;
+     grid-area: lugar-2-sp;
+     background-color: #fffdff;
+
+     grid-template-areas: " imagem2-sp . DOM-texto . "
+                          " imagem2-sp abre abre . " 
+                          " imagem2-sp fecha fecha . " 
+                          " imagem2-sp link link link " ; 
+        grid-template-rows: 1fr 20px 20px 1fr;
+        grid-template-columns: 300px 1fr 1fr 1fr;
+ }
+
+ #DOM {
+    width: 300px;
+    height: 100%;
+    grid-area: imagem2-sp;
+}
+
+#DOM-texto {
+    color: #34344e;
+    grid-area: DOM-texto;
+    margin-top: 20px;
+    
+}
+
+#DOM-link {
+    grid-area: link;
+    margin: auto;
+    color: #34344e;
+    text-decoration: none;
+}
+
+#DOM-link:hover {
+    color: #7070c7;
+} */
+
+#lugar-2-sp {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    display: grid;
+     width: 400px;
+     height: 230px;
+     background-image: url(imagens/D.O.M);
+     background-size: cover;
+     grid-area: lugar-2-sp;
+     background-color: #fffdff;
+
+     grid-template-areas: " . . ."
+                          " DOM-texto DOM-texto DOM-texto "
+                          " mapa  mapa ."   ; 
+        grid-template-rows: 1fr 15% 10%;
+        grid-template-columns: 23% 20% 1fr;
+ } 
+ 
+ #DOM-texto {
+    color: #fffdff;
+    grid-area: DOM-texto;
+    margin-left: 20px;
+    font-size: 26px;
+    margin-bottom: 5px;
+    
+}
+
+#DOM-link {
+    text-decoration: none;
+    width: 400px;
+     height: 230px;
+}
+
+#DOM-link:hover {
+    box-shadow: 0 0 10px rgba(140, 4, 173, 0.2);
+    width: 400px;
+     height: 230px;
+}  
+
+/* ---------------------------- Lugar-3-sp -------------------------------- */
+
+/* #lugar-3-sp {
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    display: grid;
+     width: 400px;
+     height: 230px;
+     grid-area: lugar-3-sp;
+     background-color: #fffdff;
+
+     grid-template-areas: " imagem3-sp . le-bife-texto . "
+                          " imagem3-sp abre abre . " 
+                          " imagem3-sp fecha fecha . " 
+                          " imagem3-sp link link link " ; 
+        grid-template-rows: 1fr 20px 20px 1fr;
+        grid-template-columns: 300px 1fr 1fr 1fr;
+ }
+
+ #le-bife {
+    width: 300px;
+    height: 100%;
+    grid-area: imagem3-sp;
+}
+
+#le-bife-texto {
+    color: #34344e;
+    grid-area: le-bife-texto;
+    margin-top: 20px;
+    
+}
+
+#le-bife-link {
+    grid-area: link;
+    margin: auto;
+    color: #34344e;
+    text-decoration: none;
+}
+
+#le-bife-link:hover {
+    color: #7070c7;
+} */
+
+#lugar-3-sp {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    display: grid;
+     width: 400px;
+     height: 230px;
+     background-image: url(imagens/le\ bife.jpg);
+     background-size: cover;
+     grid-area: lugar-3-sp;
+     background-color: #fffdff;
+
+     grid-template-areas: " . . ."
+                          " le-bife-texto le-bife-texto le-bife-texto "
+                          " mapa  mapa ."   ; 
+        grid-template-rows: 1fr 15% 10%;
+        grid-template-columns: 23% 20% 1fr;
+ } 
+ 
+ #le-bife-texto {
+    color: #fffdff;
+    grid-area: le-bife-texto;
+    margin-left: 20px;
+    font-size: 26px;
+    margin-bottom: 5px;
+    
+}
+
+#le-bife-link {
+    text-decoration: none;
+    width: 400px;
+     height: 230px;
+}
+
+#le-bife-link:hover {
+    box-shadow: 0 0 10px rgba(140, 4, 173, 0.2);
+    width: 400px;
+     height: 230px;
+}  
+
+/*--------------------- footer -------------------------*/
+
+footer {
+    position: relative;
+    width: auto;
+    height: 35px;
+    background-color: #34344e;
+    text-align: center;
+}
+
+#rodape {
+    position: absolute;
+    left: 0;
+    top: 29%;
+    width: 100%;
+    text-align: center;
+}
+
+#rodape a {
+    text-decoration: none;
+    color: #fffdff;
+    text-transform: uppercase;
+}
+
+#rodape a:hover {
+    color: #7070c7;
+}
+
+/* --------------------- Hotel SP --------------------------- */
+
+#hoteis-sp {
+    min-width: 1300px;
+    max-width: 2000px;
+    display: grid;
+    width: auto;
+    height: 260px;
+
+    grid-template-areas: " titulo-sp titulo-sp titulo-sp"
+                         " lugar-1-hotel-sp lugar-2-hotel-sp lugar-3-hotel-sp" ; 
+        grid-template-rows: 10% 1fr ;
+        grid-template-columns: 1fr 1fr 1fr;
+ }
+
+ /* ------------------------------------ Lugar-1-hotel-sp ---------------------------------*/
+
+ /* #lugar-1-hotel-sp {
+    margin-top: 20px;
+    margin-left: 15px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    display: grid;
+     width: 400px;
+     height: 230px;
+     grid-area: lugar-1-hotel-sp;
+     background-color: #fffdff;
+
+     grid-template-areas: " imagem-ht-sp . cadoro-texto . "
+                          " imagem-ht-sp abre abre . " 
+                          " imagem-ht-sp fecha fecha . " 
+                          " imagem-ht-sp link link link " ; 
+        grid-template-rows: 1fr 20px 20px 1fr;
+        grid-template-columns: 300px 1fr 1fr 1fr;
+ } 
+
+
+
+#cadoro {
+    width: 300px;
+    height: 100%;
+    grid-area: imagem-ht-sp;
+}
+
+#cadoro-texto {
+    color: #34344e;
+    grid-area: cadoro-texto;
+    margin-top: 20px;
+    
+}
+
+.horario-abre {
+    display: grid;
+    color: #34344e;
+    grid-area: abre;
+    
+
+    grid-template-areas: " relogio horas " ; 
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr  1fr;
+}
+
+
+
+.relogio {
+    width: 16px;
+    height: 16px;
+    grid-area: relogio;
+    margin-top: 1px;
+    margin-left: 15px;
+}
+
+.horario-abre h4 {
+    grid-area: horas;
+
+}
+
+.locker {
+    width: 16px;
+    height: 16px;
+    grid-area: locker;
+    margin-left: 15px;
+}
+
+.horario-fecha h4 {
+    grid-area: horas;
+    margin-top: 2px;
+
+}
+
+.horario-fecha {
+    display: grid;
+    color: #34344e;
+    grid-area: fecha ;
+    
+
+    grid-template-areas: " locker horas " ; 
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr  1fr;
+}
+
+#cadoro-link {
+    grid-area: link;
+    margin: auto;
+    color: #34344e;
+    text-decoration: none;
+}
+
+#cadoro-link:hover {
+    color: #7070c7;
+} */
+
+#lugar-1-hotel-sp {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    display: grid;
+     width: 400px;
+     height: 230px;
+     background-image: url(imagens/cadroro.jpg);
+     background-size: cover;
+     grid-area: lugar-1-hotel-sp ;
+     background-color: #fffdff;
+
+     grid-template-areas: " . . ."
+                          " cadoro-texto cadoro-texto cadoro-texto "
+                          " mapa  mapa ."   ; 
+        grid-template-rows: 1fr 15% 10%;
+        grid-template-columns: 23% 20% 1fr;
+ } 
+ 
+ #cadoro-texto {
+    color: #fffdff;
+    grid-area: cadoro-texto;
+    margin-left: 20px;
+    font-size: 26px;
+    margin-bottom: 5px;
+    
+}
+
+#cadoro-link {
+    text-decoration: none;
+    width: 400px;
+     height: 230px;
+     margin-top: 20px;
+     margin-left: 20px;
+}
+
+#cadoro-link:hover {
+    box-shadow: 0 0 10px rgba(140, 4, 173, 0.2);
+    width: 400px;
+     height: 230px;
+     margin-top: 20px;
+     margin-left: 20px;
+}
+
+     .mapa {
+        display: grid;
+        color: #fffdff;
+        grid-area: mapa;
+        
+    
+        grid-template-areas: " ponto lugar " ; 
+            grid-template-rows: 1fr;
+            grid-template-columns: 10%  1fr;
+    }
+    
+    .ponto {
+        width: 12px;
+        height: 12px;
+        grid-area: ponto;
+        margin-left: 20px;
+        margin-bottom: 18px;
+    }
+    
+    .mapa h4 {
+        font-size: 8px;
+        grid-area: lugar;
+        color: #fffdff;
+        margin-left: 20px;
+        margin-bottom: 16px;
+    }
+ 
+ /* ------------------------------------ Lugar-2-hotel-sp ---------------------------------*/
+
+ /* #lugar-2-hotel-sp {
+    margin-top: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    display: grid;
+     width: 400px;
+     height: 230px;
+     grid-area: lugar-2-hotel-sp;
+     background-color: #fffdff;
+
+     grid-template-areas: " imagem-ht-sp2 . london-texto . "
+                          " imagem-ht-sp2 abre abre . " 
+                          " imagem-ht-sp2 fecha fecha . " 
+                          " imagem-ht-sp2 link link link " ; 
+        grid-template-rows: 1fr 20px 20px 1fr;
+        grid-template-columns: 300px 1fr 1fr 1fr;
+ } 
+
+ #london {
+    width: 300px;
+    height: 100%;
+    grid-area: imagem-ht-sp2;
+}
+
+#london-texto {
+    color: #34344e;
+    grid-area: london-texto;
+    margin-top: 20px;
+    
+}
+
+#london-link {
+    grid-area: link;
+    margin: auto;
+    color: #34344e;
+    text-decoration: none;
+}
+
+#london-link:hover {
+    color: #7070c7;
+} */
+
+#lugar-2-hotel-sp {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    display: grid;
+     width: 400px;
+     height: 230px;
+     background-image: url(imagens/London\ class.jpg);
+     background-size: cover;
+     grid-area: lugar-2-hotel-sp ;
+     background-color: #fffdff;
+
+     grid-template-areas: " . . ."
+                          " london-texto london-texto london-texto "
+                          " mapa  mapa ."   ; 
+        grid-template-rows: 1fr 15% 10%;
+        grid-template-columns: 23% 20% 1fr;
+ } 
+ 
+ #london-texto {
+    color: #fffdff;
+    grid-area: london-texto;
+    margin-left: 20px;
+    font-size: 26px;
+    margin-bottom: 5px;
+    
+}
+
+#london-link {
+    text-decoration: none;
+    width: 400px;
+     height: 230px;
+     margin-top: 20px;
+}
+
+#london-link:hover {
+    box-shadow: 0 0 10px rgba(140, 4, 173, 0.2);
+    width: 400px;
+     height: 230px;
+     margin-top: 20px;
+}
+
+ /* ------------------------------------ Lugar-3-hotel-sp ---------------------------------*/
+
+/*  #lugar-3-hotel-sp {
+    margin-top: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    display: grid;
+     width: 400px;
+     height: 230px;
+     grid-area: lugar-3-hotel-sp;
+     background-color: #fffdff;
+
+     grid-template-areas: " imagem-ht-sp3 . qoya-texto . "
+                          " imagem-ht-sp3 abre abre . " 
+                          " imagem-ht-sp3 fecha fecha . " 
+                          " imagem-ht-sp3 link link link " ; 
+        grid-template-rows: 1fr 20px 20px 1fr;
+        grid-template-columns: 300px 1fr 1fr 1fr;
+ } 
+
+ #qoya {
+    width: 300px;
+    height: 100%;
+    grid-area: imagem-ht-sp3;
+}
+
+#qoya-texto {
+    color: #34344e;
+    grid-area: qoya-texto;
+    margin-top: 20px;
+    
+}
+
+#qoya-link {
+    grid-area: link;
+    margin: auto;
+    color: #34344e;
+    text-decoration: none;
+}
+
+#qoya-link:hover {
+    color: #7070c7;
+} */
+
+#lugar-3-hotel-sp {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    display: grid;
+     width: 400px;
+     height: 230px;
+     background-image: url(imagens/Qoya.jpg);
+     background-size: cover;
+     grid-area: lugar-3-hotel-sp ;
+     background-color: #fffdff;
+
+     grid-template-areas: " . . ."
+                          " qoya-texto qoya-texto qoya-texto "
+                          " mapa  mapa ."   ; 
+        grid-template-rows: 1fr 15% 10%;
+        grid-template-columns: 23% 20% 1fr;
+ } 
+ 
+ #qoya-texto {
+    color: #fffdff;
+    grid-area: qoya-texto;
+    margin-left: 20px;
+    font-size: 26px;
+    margin-bottom: 5px;
+    
+}
+
+#qoya-link {
+    text-decoration: none;
+    width: 400px;
+     height: 230px;
+     margin-top: 20px;
+}
+
+#qoya-link:hover {
+    box-shadow: 0 0 10px rgba(140, 4, 173, 0.2);
+    width: 400px;
+     height: 230px;
+     margin-top: 20px;
+}
+

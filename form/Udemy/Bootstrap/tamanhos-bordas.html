@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Bootstrap - Size and Borders</title>
+  </head>
+
+  <body style="margin-bottom: 200px; width: 600px; margin: 0 auto;"> <!-- O auto da margin centraliza os componentes de dentro dela. -->
+
+
+    <!-- Classes de largura -->
+        <div class="bg-primary w-25"> width 25% </div> <!-- O "w-25", deixa a largura da div e 25% do seu total. -->
+        <div class="bg-primary w-50"> width 50% </div>
+        <div class="bg-primary w-75"> width 75% </div>
+        <div class="bg-primary w-100"> width 100% </div>
+        <div class="bg-primary w-auto"> width auto </div> <!-- Ocupa todo espaçamento automaticamente. -->
+
+        <br>
+        <br>
+
+        <!-- Classe de altura -->
+         <div style="height: 300px; border: 1px solid gray">
+                <div class="bg-warning d-inline-block h-25">Height 25%</div> <!-- "h-25", define a procentagem que a div vai ocupar em sua altura. -->
+                <div class="bg-warning d-inline-block h-50">Height 50%</div>
+                <div class="bg-warning d-inline-block h-75">Height 75%</div>
+                <div class="bg-warning d-inline-block h-100">Height 100%</div>
+                <div class="bg-warning d-inline-block h-auto">Height auto</div> <!-- Ele segue sua altura de acordo com o tamanho do conteúdo. -->
+         </div>
+
+
+         <!-- BORDAS
+          border        ->      Todas as bordas
+          border-top    ->      Borda superior  
+          border-bottom    ->      Borda inferior    
+          border-right    ->      Borda direita   
+          border-left    ->      Borda esquerda      
+          
+          Cores da borda
+          border-<cor>: Primary, secondary, success, info,
+            warning, danger, light, dark, white.
+          -->
+
+<div class="bg-white mb-2 border border-dark">Todas as bordas</div> <!-- "bg = Background "-->
+<div class="bg-white mb-2 border-top border-warning">Borda Superior</div>
+<div class="bg-white mb-2 border-bottom border-danger">Borda Inferior</div>
+<div class="bg-white mb-2 border-right border-success">Borda Direita</div>
+<div class="bg-white mb-2 border-left">Borda Esquerda</div>
+
+
+            <!-- Border radius
+             opções: rounded, rounded-top, rounded-right, rounded-left, rounded-circle -->
+
+             <div class="bg-light mb-2 border border rounded border-dark">Rounded</div> <!-- "bg = Background, "p-5", Padding nivel 5 "-->
+             <div class="bg-light mb-2 border rounded-top border-warning">Rounded Superior</div>
+             <div class="bg-light mb-2 border rounded-bottom border-danger">Rounded Inferior</div>
+             <div class="bg-light mb-2 border rounded-right border-success">Rounded Direita</div>
+             <div class="bg-light mb-2 border rounded-left border-success">Rounded Left</div> 
+             <div class="bg-light mb-2 p-5 border rounded-circle w-25">Rounded Circle</div> <!-- O circle faz literalmente um circulo. -->
+             
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
