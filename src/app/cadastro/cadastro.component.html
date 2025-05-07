@@ -1,0 +1,81 @@
+<div fxLayout="row" fxLayoutAlign="center">
+    <div fxLayout="column" fxFlex="900px"> <!-- Essa coluna vai ter 1000px -->
+            <form class="mt-60" #clientesFrm="ngForm" (ngSubmit)="salvar()"> 
+                    <mat-card>           <!-- Quando for submitado  (botão apertado) vai chamar a função salvar. -->
+
+                        <mat-card-header>
+                            <mat-card-title> Dados Pessoais </mat-card-title>
+                        </mat-card-header>
+                        
+                        <mat-card-content class="mt-20">
+                            <div fxLayout="row" fxLayoutAlign="start" fxLayoutGap="16px">                                 
+                                <div fxLayout="column" fxFlex="800px">
+                                    <mat-form-field class="full-width">
+                                        <mat-label>Nome: *</mat-label>
+                                        <input 
+                                        type="text"
+                                        [(ngModel)]="cliete.nome" 
+                                        name="nome"
+                                        placeholder="Ex: Lara Lena" 
+                                        matInput>
+                                    </mat-form-field> 
+                                 </div>
+                            </div>
+
+                            <div fxLayout="row" fxLayoutAlign="start" fxLayoutGap="16px">
+                                    <div fxLayout="column" fxFlex="800px">  
+                                        <mat-form-field class="full-width">
+                                            <mat-label>Email: *</mat-label>
+                                            <input  type="text"
+                                                    [(ngModel)]="cliete.email" 
+                                                    name="email"
+                                                    placeholder="Ex: name@gmail.com" 
+                                                    matInput>
+                                        </mat-form-field> 
+                                    </div> 
+                            </div>
+
+                            <div fxLayout="row" fxLayoutAlign="start" fxLayoutGap="16px">
+                                    <div fxLayout="column" fxFlex="392px">
+                                        <mat-form-field class="full-width">
+                                            <mat-label>CPF: *</mat-label>
+                                            <input  type="text"
+                                                    [(ngModel)]="cliete.cpf" 
+                                                    name="CPF"
+                                                    placeholder="Digite seu CPF"
+                                                    matInput>
+                                        </mat-form-field> 
+                                    </div>
+
+                                    <div fxLayout="column" fxFlex="392px"> 
+                                        <mat-form-field class="full-width">
+                                            <mat-label>Data de Nascimento: *</mat-label>
+                                            <input  type="text"
+                                                    [(ngModel)]="cliete.dataNascimento" 
+                                                    name="dataNascimento"
+                                                    placeholder="Digite sua data de nascimento" 
+                                                    matInput>
+                                        </mat-form-field> 
+                                    </div>  
+                             </div>
+
+                        </mat-card-content>
+                                <mat-card-actions>
+
+                                    <div fxLayout="row"> 
+                                        @if(!atualizando){
+                                            <div fxLayout="column">
+                                                <button mat-flat-button color="primary" class="ml-5" type="submit"> Salvar </button>    
+                                            </div>
+                                        }@else{
+                                            <div fxLayout="column">
+                                                <button mat-flat-button color="primary" class="ml-5"> Atualizar </button>    
+                                            </div>
+                                        }
+                                    </div>
+
+                                </mat-card-actions>
+                    </mat-card>
+            </form>
+    </div>
+</div>
