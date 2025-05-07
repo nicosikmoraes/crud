@@ -1,0 +1,13 @@
+.spacer {
+        flex: 1 1 auto;
+}
+
+a {
+    text-decoration: none;
+    padding: 8px;
+    color: white;
+}
+
+a:hover {
+    color: #c8c2ff;
+}
