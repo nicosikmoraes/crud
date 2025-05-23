@@ -1,0 +1,31 @@
+{
+  "clientes": [
+    {
+      "id": "d281afe9-92ca-4750-9455-cc1aacf6a8c9",
+      "nome": "Saldo",
+      "cpf": "22222222222",
+      "dataNascimento": "16052005",
+      "email": "saldo@gmailcom",
+      "senha": "saldos",
+      "saldo": 0
+    },
+    {
+      "id": "b9922c07-314a-4ff7-be55-507780510b8b",
+      "nome": "Nicolas Siqueira Moraes",
+      "cpf": "12345600000",
+      "dataNascimento": "20231561",
+      "email": "kasada@dasdw",
+      "senha": "nicolas",
+      "saldo": 3000
+    },
+    {
+      "id": "5baaf6f3-b1ef-4f46-bb8d-60d325592c88",
+      "nome": "laralena",
+      "cpf": "33333333333",
+      "dataNascimento": "15616516",
+      "email": "ycrt@BUI",
+      "senha": "LARALENA",
+      "saldo": 4000
+    }
+  ]
+}
